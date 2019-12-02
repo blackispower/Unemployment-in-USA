@@ -180,6 +180,7 @@ class Line{
             linesvg.append("g")
                    .classed("axis", true)
                    .call(y_axis)
+                   .call(g => g.select(".domain").attr("stroke","white"))
                    .attr("transform","translate(40,30)")
                    .attr("class","axisy")
             linesvg.append("line")
